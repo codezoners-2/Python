@@ -17,8 +17,8 @@ def remove_adjacent(nums):
 # Ideallyyou should make a single pass of both lists.
 # so (['aa', 'xx'], ['bb', 'cc', 'zz']) returns ['aa', 'bb', 'cc', 'xx', 'zz']
 def linear_merge(list1, list2):
-  # +++your code here+++
-  return
+  mergedList = list1 + list2
+  return sorted(mergedList)
 
 # Calls the above functions with interesting inputs.
 def main():
