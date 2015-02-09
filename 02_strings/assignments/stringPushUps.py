@@ -76,10 +76,10 @@ def front_back(a, b):
 def main():
 
   print 'both_ends'
-  both_ends('spring')
-  both_ends('Hello')
-  both_ends('a')
-  both_ends('xyz')
+  print both_ends('spring')
+  print both_ends('Hello')
+  print both_ends('a')
+  print both_ends('xyz')
 
   
   print
