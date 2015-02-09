@@ -6,8 +6,11 @@
 # Hint: create a for loop and for each number check if it's not the same as the 
 # one just added to the list.
 def remove_adjacent(nums):
-  # +++your code here+++
-  return
+  newNums = []
+  for i in nums:
+	  if i not in newNums:
+		  newNums.append(i)
+  return newNums
 
 # D. Given two lists sorted in increasing order, create and return a merged
 # list of all the elements in sorted order. You may modify the passed in lists.
