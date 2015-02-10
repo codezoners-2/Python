@@ -18,7 +18,7 @@ secretMessage = "Help me Obi Wan Kenobi, you're my only hope!"
 	# return "result"
 
 #the following line should shift all letters by one position
-# and print: "Hfmq nf Ocj Wbo Kfopcj, zpv'sf nz pomz ipqf!"
+# and print: "Ifmq nf Pcj Xbo Lfopcj, zpv'sf nz pomz ipqf!"
 # print caesarCipher(secretMessage, 1)
 
 ######################
