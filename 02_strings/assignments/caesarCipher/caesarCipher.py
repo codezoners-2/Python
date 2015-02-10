@@ -1,11 +1,6 @@
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 secretMessage = "Help me Obi Wan Kenobi, you're my only hope!"
 
-def myFunc():
-	pass
-
-myFunc()
-
 #####################
 # PART A
 # define a function caesarCipher that takes 2 parameters called: string, shift
