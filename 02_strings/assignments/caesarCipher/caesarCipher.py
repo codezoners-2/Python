@@ -2,7 +2,7 @@ alphabet = "abcdefghijklmnopqrstuvwxyz"
 secretMessage = "Help me Obi Wan Kenobi, you're my only hope!"
 
 def myFunc():
-
+	print "hello"
 
 myFunc()
 
