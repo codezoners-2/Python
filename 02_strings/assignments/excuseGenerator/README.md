@@ -1,11 +1,11 @@
 # Excuse Generator
 
-Use the excuseTemplate.txt file as a template to fill in various bit of data from the data.txt file. Steps:
+Use the excuseTemplate.txt file as a template to fill in various bit of data from the data.txt file. Open the *myCode.py* file and follow these steps:
 
 1. manually edit the excuseTemplate.txt file to put the right markers ({0} or {keyword}) to use with the format() method
 2. read the excuse template file:
   * write a function called `readTemplate(filename)`
-  * write a doctest (FIRST!) passing the string "testRead.txt" to the function and testing against a printout of
+  * write a doctest **first**, passing the string "testRead.txt" to the function and testing against a printout of
   ```
   one
   two
@@ -15,7 +15,7 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
   * Return the cleaned up string
 3. convert the contents of simpleData.txt to a dictionary
   * write a function called `dataToDict(filename)`
-  * write a doctest (FIRST!) passing the string *testDict.txt* to the function and testing against a dictionary printout of `{'student_name': 'Robert', 'teacher_name': 'Smith'}`
+  * write a doctest **first**, passing the string *testDict.txt* to the function and testing against a dictionary printout of `{'student_name': 'Robert', 'teacher_name': 'Smith'}`
   * write code inside the `dataToDict(filename)` function that reads a file using the `readlines()` function (what does `readlines()` return? Look it up!).
   * Take what `readlines()` returns and convert it to a dictionary by using the `split()` function to separate the string before and after the colon.
   * return the dictionary created
