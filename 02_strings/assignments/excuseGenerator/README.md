@@ -4,15 +4,15 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
 
 1. manually edit the excuseTemplate.txt file to put the right markers ({0} or {keyword}) to use with the format() method
 2. read the excuse template file:
-  1. write a function called `readTemplate(filename)`
-  2. write a doctest (FIRST!) passing the string "testRead.txt" to the function and testing against a printout of
+  * write a function called `readTemplate(filename)`
+  * write a doctest (FIRST!) passing the string "testRead.txt" to the function and testing against a printout of
   ```
   one
   two
   ```
-  3. Once you've written the test, write code that opens the file called *filename* for reading, reads all the lines (using `read()` - what does it return? Look it up!)
-  4. Use the `strip()` function (look it up) in order to remove all the whitespace from the end
-  5. Return the cleaned up string
+  * Once you've written the test, write code that opens the file called *filename* for reading, reads all the lines (using `read()` - what does it return? Look it up!)
+  * Use the `strip()` function (look it up) in order to remove all the whitespace from the end
+  * Return the cleaned up string
 3. convert the contents of simpleData.txt to a dictionary
   1. write a function called `dataToDict(filename)`
   2. write a doctest (FIRST!) passing the string *testDict.txt* to the function and testing against a dictionary printout of `{'student_name': 'Robert', 'teacher_name': 'Smith'}`
