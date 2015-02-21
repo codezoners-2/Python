@@ -6,8 +6,11 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
 2. read the excuse template file:
   1. write a function called `readTemplate(filename)`
   2. write a doctest (FIRST!) passing the string "testRead.txt" to the function and testing against a printout of
-  ```one
-  two```
+  ```
+  one
+  two
+  ```
+  
   3. Once you've written the test, write code that opens the file called *filename* for reading, reads all the lines (using `read()` - what does it return? Look it up!)
   4. Use the `strip()` function (look it up) in order to remove all the whitespace from the end
   5. Return the cleaned up string
