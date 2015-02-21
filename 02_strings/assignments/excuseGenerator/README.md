@@ -10,7 +10,6 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
   one
   two
   ```
-  
   3. Once you've written the test, write code that opens the file called *filename* for reading, reads all the lines (using `read()` - what does it return? Look it up!)
   4. Use the `strip()` function (look it up) in order to remove all the whitespace from the end
   5. Return the cleaned up string
