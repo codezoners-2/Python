@@ -22,7 +22,7 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
   * return the dictionary created
 4. Uncomment the lines of this step in order to load the actual file data and to add to the template text the data of *simpleData.txt* file
 5. Final touches:
-  * read the boostrap.html file using the `fileToString()` function we previously created and store its contents into a variable called `bootstrap` (which is a string as a result).
+  * read the bootstrap.html file using the `fileToString()` function we previously created and store its contents into a variable called `bootstrap` (which is a string as a result).
   * Open the html file in an editor and search for the {customText} tag. This is where the format function will insert our text. Close the editor.
   * Use the format function along with the `bootstrap` (and the keyword `customText`) to generate a new string that contains the finalized html code along with our custom excuse text. Store the output of the format function in a variable called `result`
   * Open a file called *excuse.html* (make sure you turn on the writing 'w' flag) and write the contents of the `result` variable in it.
