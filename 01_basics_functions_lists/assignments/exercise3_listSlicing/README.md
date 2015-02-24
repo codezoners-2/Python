@@ -14,4 +14,4 @@ So: wordSlicer(["use", "the", "force", "Luke"], "force") should return ["use", "
 
 ### repeatPart
 Write a function repeatPart(aList, start, end) which takes a list and a start/end position and returns the list with the bit between the start/end position attached to the end. Use slicing operations to get the job done.
-So: repeatPart([0,1,2,3,4,5,6], 2, 4) should return [1,2,3,4,5,6,3,4]
+So: repeatPart([0,1,2,3,4,5,6], 2, 4) should return [0,1,2,3,4,5,6,2,3]
