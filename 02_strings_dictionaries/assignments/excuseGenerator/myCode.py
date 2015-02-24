@@ -17,7 +17,7 @@ def stringToDict(string):
 
 # STEP 4
 #template = fileToString("excuseTemplate.txt")
-#dataDict = stringToDict("simpleData.txt")
+#dataDict = stringToDict(fileToString("simpleData.txt"))
 #finalText = template.format(**dataDict)
 
 # STEP 5
