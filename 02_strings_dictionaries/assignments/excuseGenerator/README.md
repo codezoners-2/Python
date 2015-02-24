@@ -2,7 +2,7 @@
 
 Use the excuseTemplate.txt file as a template to fill in various bit of data from the data.txt file. Open the *myCode.py* file and follow these steps:
 
-1. manually edit the excuseTemplate.txt file to put the right markers ({0} or {keyword}) to use with the format() method. In order for it to work you need too use the same keywords I have used inside the *simpleData.txt* file (student_name, teacher_name, diseases, etc). You'll see a bit later why this is necessary.
+1. manually edit the excuseTemplate.txt file to put the right markers ({0} or {keyword}) to use with the format() method. In order for it to work you need too use the same keywords I have used inside the *simpleData.txt* file ({student_name}, {teacher_name}, {diseases}, etc). You'll see a bit later why this is necessary.
 2. read the excuse template file:
   * write a function called `fileToString(filename)`
   * write a doctest **first**, passing the string "testRead.txt" to the function and testing against a printout of
