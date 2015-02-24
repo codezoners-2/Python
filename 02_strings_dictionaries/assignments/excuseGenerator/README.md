@@ -10,7 +10,7 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
   one
   two
   ```
-  (Hint: your test could be `print(fileToString("testRead.txt"))`
+  Hint: your test could be `print(fileToString("testRead.txt"))`
   * Once you've written the test  (Hint: you test the file by running the `python -m doctest logic.py` command), write code that opens the file called `filename` for reading, reads all the lines (using `read()` - what does it return? Look it up!)
   * Use the `strip()` function (look it up) in order to remove all the whitespace from the end
   * Return the cleaned up string
