@@ -25,7 +25,7 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
       # for each element in the list use split again this time on ":" and save the result in a variable called row. row contains a list with the left and right part of the lines we split.
       # save the value of the first element of row in a variable called k
       # save the value of the second element of row in a variable called v
-      # do myDict[k]=v so that you insert value v for key k in the dictionary      
+      # do myDict[k]=v so that you insert value v for key k in the dictionary
   ```
   * return the dictionary created
 4. Uncomment the lines of this step in order to load the actual file data and to add to the template text the data of *simpleData.txt* file
