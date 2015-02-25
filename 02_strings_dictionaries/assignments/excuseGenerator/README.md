@@ -24,7 +24,7 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
     # create a for loop and loop over the elements of the **list** created in the step involving the `split()` function above
       # for each element in the list use split again this time on ":" and save the result in a variable called "row". "row" contains a list with the left and right part of the lines we split.
       # save the value of the first element of "row" in a variable called k
-      # save the value of the second element of "row" in a variable called 
+      # save the value of the second element of "row" in a variable called v
   
   ```
     
