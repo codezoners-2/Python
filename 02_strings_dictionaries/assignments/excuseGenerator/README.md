@@ -20,11 +20,12 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
   * write code inside the `stringToDict(string)` function that splits the string into a list of the lines it is made up of. (Hint: you'll need to use the `split()` function.
   * Time to create a dictionary which will contain the data we read from the file. Follow this steps as if they were code (line by line):
   ```
-    # create an empty dictionary
-    # create a for loop and loop over the elements of the **list** created in the step involving the `split()` function above
-      # for each element in the list use split again this time on ":" and save the result in a variable called *row*. "row" contains a list with the left and right part of the lines we split.
-      # save the value of the first element of "row" in a variable called k
-      # save the value of the second element of "row" in a variable called v
+    # create an empty dictionary called myDict
+    # create a for loop and loop over the elements of the list created in the step involving the split() function above
+      # for each element in the list use split again this time on ":" and save the result in a variable called row. row contains a list with the left and right part of the lines we split.
+      # save the value of the first element of row in a variable called k
+      # save the value of the second element of row in a variable called v
+      # do myDict[k]=v so that you insert value v for key k in the dictionary      
   
   ```
     
