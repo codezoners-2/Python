@@ -21,11 +21,14 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
   * Time to create a dictionary which will contain the data we read from the file. Follow this steps as if they were code (line by line):
   ```
     # create an empty dictionary
+    # create a for loop and loop over the elements of the **list** created in the step involving the `split()` function above
+      # for each element in the list use split again this time on ":" and save the result in a variable called "row". "row" contains a list with the left and right part of the lines we split.
+      # save the value of the first element of "row" in a variable called k
+      # save the value of the second element of "row" in a variable called 
   
   ```
-    * create an empty dictionary
-    * create a for loop and loop over the elements of the **list** created in the step involving the `split()` function.
-      * populating the dictionary. You'll need to use `split()` again to split each line at the `:` to take the key and the value for the dictionary
+    
+      * You'll need to use `split()` again to split each line at the `:` to take the key and the value for the dictionary
     * test
   * return the dictionary created
 4. Uncomment the lines of this step in order to load the actual file data and to add to the template text the data of *simpleData.txt* file
