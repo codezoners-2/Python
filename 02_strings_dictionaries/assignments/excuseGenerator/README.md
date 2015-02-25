@@ -19,6 +19,7 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
   * write a doctest **first**, passing to the `stringToDict(string)` function the output of the function `fileToString('testDict.txt')` and test whether the equality (==) against a `{'student_name': 'Robert', 'teacher_name': 'Smith'}` returns True
   * write code inside the `stringToDict(string)` function that splits the string into a list of the lines it is made up of. (Hint: you'll need to use the `split()` function.
   * create an empty dictionary and loop over the elements of the list created in the previous step populating the dictionary. You'll need to use `split()` again to split each line at the `:` to take the key and the value for the dictionary
+    * test
   * return the dictionary created
 4. Uncomment the lines of this step in order to load the actual file data and to add to the template text the data of *simpleData.txt* file
 5. Final touches:
