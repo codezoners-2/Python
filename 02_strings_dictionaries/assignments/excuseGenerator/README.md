@@ -28,9 +28,6 @@ Use the excuseTemplate.txt file as a template to fill in various bit of data fro
       # do myDict[k]=v so that you insert value v for key k in the dictionary      
   
   ```
-    
-      * You'll need to use `split()` again to split each line at the `:` to take the key and the value for the dictionary
-    * test
   * return the dictionary created
 4. Uncomment the lines of this step in order to load the actual file data and to add to the template text the data of *simpleData.txt* file
 5. Final touches:
