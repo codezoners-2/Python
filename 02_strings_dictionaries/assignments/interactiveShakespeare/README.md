@@ -1,9 +1,15 @@
 # interactive Shakespeare
 
-Create an interactive application that counts the number of times a string is mentioned in the complete works of shakespeare and maps the results. To begin follow these steps:
+Create an interactive application that counts the number of times a string is mentioned in the complete works of shakespeare and maps the results. To complete this we have separated the front-end from the back-end. Each does what's necessary:
+* back-end: we'll write two functions:
+    * `filesToDict(listOfFiles)` function that reads all the works of Shakespeare and stores the contents in a dictionary where the keys are the titles of the works and the corresponding values the text of each work
+    * `freqAnalyzer(content, keyword)` function that takes a dictionary like the one created in the previous function and creates a new one which contains how many times the `keyword` appearred in each work
+* front-end: it's processing.py program that takes the dictionary created from the `freqAnalyzer(content, keyword)` step and visualizes the results
+
+## To begin follow these steps:
 
 1. Open the logic.py file. This file contains all the brains behind our application. This is where the file reading and frequency calculating is taking place.
-  * in the `readTemplate(filename)` function start by writing a test **first**. The test should take a list of files (testRead1.txt and testRead2.txt are provided) and return the contents. Make the test fail first and start with the next step. (Hint: you test the file by running the `python -m doctest logic.py` command). **ATTENTION**: since the files have new line characters `\n` you'll have to add these in the string with which you compare. But because we are in doctest mode when we do this comparison you'll need to add two slashes like this: `\\n` when you want to represent a new line character.
+  * in the `filesToDict(listOfFiles)` function start by writing a test **first**. The test should take a list of files (testRead1.txt and testRead2.txt are provided) and return the contents. Make the test fail first and start with the next step. (Hint: you test the file by running the `python -m doctest logic.py` command). **ATTENTION**: since the files have new line characters `\n` you'll have to add these in the string with which you compare. But because we are in doctest mode when we do this comparison you'll need to add two slashes like this: `\\n` when you want to represent a new line character.
   * write code that reads the files in the `listOfFiles` list. Follow these steps, taking into account the indentation:
     * create an empty dictionary called `resultsDict`
     * create a for loop which goes over the list of files in the list `listOfFiles` and for each item `filename`...
