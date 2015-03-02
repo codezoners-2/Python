@@ -13,9 +13,6 @@ def filesToDict(listOfFiles):
 def freqAnalyzer(content, keyword):
 	'''
 	pass to it the dictionary from the previous step and the value 'tHree' (preserve the capitalization)
-	>>> freqAnalyzer(______________________________, 'tHree')
-	"what should it return?"
-	
 	>>> freqAnalyzer(filesToDict(['testRead1.txt','testRead2.txt']), 'tHree')
 	"what should it return?"
 	
