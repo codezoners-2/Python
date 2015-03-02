@@ -21,7 +21,7 @@ Create an interactive application that counts the number of times a string is me
   * In the `freqAnalyzer(content, keyword)` function start by writing a test **first**. The test could take the output of the previous function as provided in the previous test (that will be the content) and the keyword should be the word "tHree" (H is done in capital on purpose.)
   * If the test fails you are ready to write the code of the function. Follow these steps paying attention to the indentation provided:
     * create an empty dictionary `resultsDict` to store the results
-    * create a for loop for each item `title` in the `content`'s dictionary **list of keys** (how do we get the list of all the keys? - Look it up!)
+    * create a for loop for each item `title` in the dictionary's **list of keys** (how do we get the list of all the keys? - Look it up!)
       * for each `key` in the dictionary get the corresponding value and store it in a variable called `text`
       * make the `text` all lower case. (Hint: you can use the `lower()` - look up how it's used!)
       * make sure the `keyword` parameter passed to the function is also lower case by making it so

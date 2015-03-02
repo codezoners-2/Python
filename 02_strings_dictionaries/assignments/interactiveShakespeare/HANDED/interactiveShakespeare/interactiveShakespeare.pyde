@@ -35,6 +35,7 @@ def updateResults(keyword):
 #and sends the updated variable to the updateResults() fuction
 #when RETURN is pressed the 'keyword' variable is emptied
 def keyPressed():
+    global keyword
     if key==ENTER:
         keyword = ''
     elif (key>='a' and key<='z') or key==' ':

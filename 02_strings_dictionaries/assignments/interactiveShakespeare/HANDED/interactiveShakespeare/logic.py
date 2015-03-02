@@ -13,11 +13,11 @@ def filesToDict(listOfFiles):
 def freqAnalyzer(content, keyword):
 	'''
 	pass to it the dictionary from the previous step and the value 'tHree' (preserve the capitalization)
-	>>> freqAnalyzer( { __create_your_own_dummy_dictionary__ } , '__add_a_string_here__') == { what should the returned dictionary contain? }
-	True
+	>>> freqAnalyzer(______________________________, 'tHree')
+	"what should it return?"
 	
-	>>> freqAnalyzer(filesToDict(['testRead1.txt','testRead2.txt']), 'tHree') == { what should the returned dictionary contain? }
-	True
+	>>> filesToDict(['testRead1.txt','testRead2.txt']), 'tHree')
+	"what should it return?"
 	
 	'''
 	pass
