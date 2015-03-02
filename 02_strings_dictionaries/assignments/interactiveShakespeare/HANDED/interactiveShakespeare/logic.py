@@ -16,7 +16,7 @@ def freqAnalyzer(content, keyword):
 	>>> freqAnalyzer(______________________________, 'tHree')
 	"what should it return?"
 	
-	>>> filesToDict(['testRead1.txt','testRead2.txt']), 'tHree')
+	>>> freqAnalyzer(filesToDict(['testRead1.txt','testRead2.txt']), 'tHree')
 	"what should it return?"
 	
 	'''
