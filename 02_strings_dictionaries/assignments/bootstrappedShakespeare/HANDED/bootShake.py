@@ -5,7 +5,7 @@ def main():
 	arguments = sys.argv[1:]
 	
 	if not arguments:
-		print "correct usage: logic.py [files] keyword"
+		print "correct usage: logic.py [files]"
 		sys.exit(1)
 	
 	#ask the user for a string, save it in a variable called query (hint: use raw_input())
