@@ -10,6 +10,7 @@ def setup():
     #3. set the stroke to black
     #4. set the fill to red
     listOfFiles = os.listdir("data") #gets all the filenames inside the data directory and stores them in a list
+    global fullWorksOfShakespeare
     #5. call the filesToDict function inside the logic module and store the returning dictionary inside the fullWorksOfShakespeare variable 
 
 def draw():
