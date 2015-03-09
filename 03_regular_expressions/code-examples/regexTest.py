@@ -1,6 +1,6 @@
 import re
 
-myString = "I love python!"
+myString = "I love fkfksj!"
 
 patt = 'love \w\w\w\w\w\w'
 
