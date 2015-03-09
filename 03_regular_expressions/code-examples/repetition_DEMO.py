@@ -1,6 +1,6 @@
 import re
 
-myString = 'I am in code for life, hurrayyyyyyyyyyyyy!!!'
+myString = 'I am in codezoner for life, hurrayyyyyyyyyyyyy!!!'
 
 ## Search for everything after codezoner
 match = re.search(r'codezoner \w*', myString)
@@ -13,7 +13,7 @@ if match: print 'example 2 -> I found: ', match.group()
 else: print 'example 2 -> not found'
 
 ## Search for words starting with 'code'
-match = re.search(r' code\w*', myString)
+match = re.search(r' code\w+', myString)
 if match: print 'example 3 -> I found: ', match.group()
 else: print 'example 3 -> not found'
 
