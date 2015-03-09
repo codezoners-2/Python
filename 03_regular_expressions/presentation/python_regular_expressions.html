@@ -1,0 +1,199 @@
+<!doctype html>
+<!--ALL MATERIAL COPYRIGHT THEODOROS PAPATHEODOROU contact@artech.cc-->
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Python regular expressions</title>
+
+		<meta name="description" content="class notes">
+		<meta name="author" content="Theodoros Papatheodorou">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Python</h2>
+					<h3>introduction to regular expressions</h3>
+					<img width="600" src="assets/regexShirt.jpg">
+					<p style="text-align:left; font-size: 50%;">&copy; Theodoros Papatheodorou
+					</p>
+				</section>
+
+				<section>
+					<h2>last week's exercise</h2>
+					<img width="500" src="assets/bootstrap.png">
+					<img width="200" src="assets/plusSign.png">
+					<img width="300" src="assets/shakespeare.jpg">
+				</section>
+				
+				<section>
+					<h2>regular expressions (regex)</h2>
+					<ul>
+						<li>for use in pattern matching with strings</li>
+						<li>a sequence of characters that forms a search pattern</li>
+						<li>a powerful language in its own right</li>
+						<li>really popular with UNIX systems (grep)</li>
+						<li>example: grep '[0-9]' dummyData.txt</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>quick introduction to regex</h2>
+					<ul>
+						<li>import the 're' module</li>
+						<li>example: match = re.search(pat, aString)</li>
+					</ul>
+				<div class="codeRefCont">
+					<p class="codeRefText">simpleRegex</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</div>
+				</section>
+
+
+				<section>
+					<h2>regex reference slide</h2>
+					<h3>(click to enlarge)</h3>
+					<a href="assets/googleRegex.png"> <img width="1300" src="assets/googleRegex.png"> </a>
+				<p>(credits: Google)</p>
+				<div class="codeRefCont">
+					<p class="codeRefText">codezoners.py</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</div>
+				</section>
+
+				<section data-background="#b5533c" data-background-transition="zoom">
+					<h2>Problem!</h2>
+					<h3>what if I have a repetition in the pattern?</h3>
+					<h4><b>myString: </b>'hello my name is Theooooooooooooooooooo!'</h4>
+				</section>
+
+				<section>
+					<h2>Repetition</h2>
+					<ul>
+						<li>+ -- 1 or more occurrences of the pattern to its left</li>
+						<li>* -- 0 or more occurrences of the pattern to its left</li>
+						<li>? -- match 0 or 1 occurrences of the pattern to its left </li>
+					</ul>
+				<div class="codeRefCont">
+					<p class="codeRefText">repetition.py</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</div>
+				</section>
+
+
+				<section data-background="#b5533c" data-background-transition="zoom">
+					<h2>Problem!</h2>
+					<h3>extracting an email address</h3>
+					<h4><b>myString: </b>'codezoners-2@mydomain.com'</h4>
+					<div class="codeRefCont">
+						<p class="codeRefText">bracketsForEmail.py</p>
+						<img class="codeRefPic" src="assets/github_icon.png">
+					</div>
+				</section>
+				
+
+				<section>
+					<h2>Square Brackets</h2>
+					<ul>
+						<li>used to indicate a set of chars, so [abc] matches 'a' or 'b' or 'c'</li>
+						<li>The codes \w, \s etc. work inside square brackets too</li>
+						<li>Exception -> dot (.) just means a literal dot.</li>
+						<li>use a dash to indicate a range</li>
+						<ul>
+								<li>[a-z] matches all lowercase letters</li>
+								<li>when you mean the 'dash' character, put the dash last (ie. [abc-])</li>
+						</ul>
+					</ul>
+				</section>
+
+				<section>
+					<h2>regex: advice</h2>
+					<ul>
+						<li>regular expressions are quite dense and powerful</li>
+						<li>but, you can spend a lot of time debugging your patterns</li>
+						<li>create small test texts and print the results</li>
+						<li>if the pattern matches nothing, weaken the pattern</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>exercise 1: state stats</h2>
+					<img width="700" src="assets/usaMap.png">
+				</section>
+
+
+			</div>
+		</div>
+
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/head.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.min.js");></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				width: 1100,
+				height: 850,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
