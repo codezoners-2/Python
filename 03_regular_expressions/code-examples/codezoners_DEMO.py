@@ -1,7 +1,6 @@
 import re
 
 myString = '''I am in code	zone2
-			  I am in codezone3
 			'''
 
 ## Search for pattern 'zone' in string 'I am a codezoner'.
