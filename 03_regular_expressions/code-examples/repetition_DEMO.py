@@ -3,7 +3,7 @@ import re
 myString = 'I am in codezoner for life, hurrayyyyyyyyyyyyy!!!'
 
 ## Search for everything after codezoner
-match = re.search(r'codezoner\w*', myString)
+match = re.search(r'codezoner \w*', myString)
 if match: print 'example 1 -> I found: ', match.group()
 else: print 'example 1 -> not found'
 
