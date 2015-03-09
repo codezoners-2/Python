@@ -155,6 +155,80 @@
 					<img width="700" src="assets/usaMap.png">
 				</section>
 
+				<section data-background="#b5533c" data-background-transition="zoom">
+					<h2>Problem!</h2>
+					<h3>get usernames + domains separately/efficiently?</h3>
+					<h4><b>myString: </b>'codezoners-2@mydomain.com'</h4>
+				</section>
+
+				<section>
+					<h2>Group extraction</h2>
+					<ul>
+						<li>'group' feature allows you to pick out parts of the matching text</li>
+						<li>use by adding parenthesis ( ) around the separate groups</li>
+						<li>parenthesis do not change what the pattern will match</li>
+						<li>they establish logical 'groups' inside of the match text</li>
+						<li>if successful, match.group(1) corresponds to the 1st left parenthesis, and match.group(2) to the 2nd left parenthesis, etc</li>
+						<li>plain match.group() corresponds the whole match text</li>
+					</ul>
+				<div class="codeRefCont">
+					<p class="codeRefText">groupExtraction</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</div>
+				</section>
+
+
+				<section>
+					<h2>findall()</h2>
+					<ul>
+						<li>the most powerful function in the re module</li>
+						<li>findall() finds all the matches and returns them as a list of strings</li>
+					</ul>
+					<div class="codeRefCont">
+						<p class="codeRefText">findall</p>
+						<img class="codeRefPic" src="assets/github_icon.png">
+					</div>
+				</section>
+
+
+				<section>
+					<h2>findall() and grouping</h2>
+					<h3>for super power</h3>
+					<ul>
+						<li>you can combine the two</li>
+						<li>results are a list of tuples</li>
+						<li>tuples can be read as a list (they are just immutable)</li>
+					</ul>
+					<div class="codeRefCont">
+						<p class="codeRefText">group_and_findall</p>
+						<img class="codeRefPic" src="assets/github_icon.png">
+					</div>
+				</section>
+				
+				
+				<section>
+					<h2>exercise 2: state stats improved</h2>
+					<img width="700" src="assets/usaMap.png">
+				</section>
+				
+				
+				<section>
+					<h2>template slide (IGNORE)</h2>
+					<ul>
+						<li>ggggg</li>
+						<li>ggggg</li>
+						<li>ggggg</li>
+						<li>ggggg</li>
+						<li>ggggg</li>
+					</ul>
+				<p>more info on <a href="http://en.wikipedia.org/wiki/Pair_programming"> wikipedia </a></p>
+				<div class="codeRefCont">
+					<p class="codeRefText">processingPyExample</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</div>
+				</section>
+
+
 
 			</div>
 		</div>

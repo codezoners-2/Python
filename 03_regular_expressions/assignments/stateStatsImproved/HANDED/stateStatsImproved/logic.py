@@ -2,47 +2,23 @@ import re
 import os
 
 # returns state name from string			
-def extractStateName(aString):
-	'''
-	write tests here
+def extractData(aString):
+	'''	
+	write test here
 	
 	'''
 	return 0
-		
-# returns state abbreviation from string
-def extractStateAbbr(aString):
-	'''
-	write tests here
-	
-	'''
-	return 0
-
-# returns state population from string
-def extractStateStats(aString):
-	'''
-	write tests here
-	
-	'''
-	return 0
-
-
-# takes a list of strings and returns a dictionary
-# which contains the relevant state data
-def linesToDict(myList):
-	'''
-	write tests here
-	
-	'''
-	return 0
-
 
 # reads a file and returns a list
-def fileToList(filename):
+def fileToString(filename):
 	'''
-	write tests here
-	
+	>>> fileToString('dummyFile.txt')
+	'one\\ntwo\\n'
 	'''
-	return 0
+	f = open(filename)
+	contentsList = f.read()
+	f.close()
+	return contentsList
 
 
 def getMaxValue(aDict):
@@ -59,26 +35,31 @@ def getMaxValue(aDict):
 
 def getMinValue(aDict):
 	'''
-	write tests here: see getMaxValue above
+	>>> getMinValue({'vm': ['vermont', 100], 'ak': ['alaska', 5]})
+	5
 	
 	'''
-	return 0
+	minValue = 100000000
+	for state in aDict.values():
+		if state[1]<minValue:
+			minValue=state[1]
+	return minValue
 
 # main function is called only when program is run
 # from command line
 def main():
 	print "*** POPULATION DATA ***"
 	fileWithPath = os.path.join("data", "population.html")
-	myDict = linesToDict(fileToList(fileWithPath))
+	myDict = extractData(fileToString(fileWithPath))
 	if myDict:
 		for e in myDict: print '{0:5} {1:18} {2}'.format(e, myDict[e][0], myDict[e][1])
 	
 	print 
 	print "*** LAND SIZE DATA ***"	
 	fileWithPath = os.path.join("data", "landsize.html")
-	myDict = linesToDict(fileToList(fileWithPath))
+	myDict = extractData(fileToString(fileWithPath))
 	if myDict:
 		for e in myDict: print '{0:5} {1:18} {2}'.format(e, myDict[e][0], myDict[e][1])
-	
+		
 if __name__ == "__main__":
 	main()

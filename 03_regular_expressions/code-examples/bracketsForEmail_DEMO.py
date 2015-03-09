@@ -1,9 +1,9 @@
 import re
 
-email = '@obama here is my email address codezoners-2@rave.ac.uk for help'
+email = 'email codezoners-2@artech.cc for help'
 
 ## find email address
-match = re.search(r'[\w.\d-]+@[.\w]+', email)
+match = re.search(r'___________', email)
 
 if match: print 'example 1 -> I found: ', match.group()
 else: print 'example 1 -> not found'
