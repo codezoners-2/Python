@@ -10,7 +10,7 @@ if match: print 'example 1 -> I found: ', match.group()
 else: print 'example 1 -> not found'
 
 ## using \w to match any 'word' character [a-z,A-Z,0-9,_]
-match = re.search(r'______', myString)
+match = re.search(r'code\w\w\w\w', myString)
 if match: print 'example 2 -> I found: ', match.group()
 else: print 'example 2 -> not found'
 
