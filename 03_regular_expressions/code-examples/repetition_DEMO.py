@@ -19,6 +19,6 @@ else: print 'example 3 -> not found'
 
 ## Find the word after the 'I' but only if it's the beginning of the sentence
 ## no matter how much space there is between it and the next word (but at least 1)
-match = re.search(r'^I am', myString)
+match = re.search(r'^I\s*am', myString)
 if match: print 'example 4 -> I found: ', match.group()
 else: print 'example 4 -> not found'
