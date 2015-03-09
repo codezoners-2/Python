@@ -1,6 +1,6 @@
 import re
 
-myString = '''I am in codezone2
+myString = '''I am in code	zone2
 			  I am in codezone3
 			'''
 
@@ -17,7 +17,7 @@ if match: print 'example 2 -> I found: ', match.group()
 else: print 'example 2 -> not found'
 
 ## use \d to locate the digit specifically
-match = re.search(r'codezone\w', myString)
+match = re.search(r'code\tzone\d', myString)
 if match: print 'example 3 -> I found: ', match.group()
 else: print 'example 3 -> not found'
 
