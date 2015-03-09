@@ -1,0 +1,7 @@
+student_name:Robert
+teacher_name:Smith
+diseases:flu
+effects:swollen
+colors:green
+animals:lama
+actions:crawled

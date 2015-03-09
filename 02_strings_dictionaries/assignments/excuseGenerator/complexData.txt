@@ -1,0 +1,7 @@
+student_name:Robert
+teacher_name:Smith
+diseases:flu ebola polio
+effects:swollen red irritated
+colors:green red blue white
+animals:lama dog cow
+actions:crawled ran walked

@@ -1,0 +1,13 @@
+<p>To: __student name___@email.com</p>
+
+<p>From: __teacher name___@email.com</p>
+
+<p>Subject: Can't make work today</p>
+
+<p>Dear Mr. __student_name__,</p>
+
+<p>I've come down with a bad case of the __disease__. My hands are __effect___ as a result, and my hair is ___color__. Yesterday, I was bitten by my neighbor's  __animal___. I __action__ all the way back home. I'm sorry to say, but I won't make it into school today. Hopefully you will understand.</p>
+
+<p>Sincerely,</p>
+
+<p>__student_name__</p>
