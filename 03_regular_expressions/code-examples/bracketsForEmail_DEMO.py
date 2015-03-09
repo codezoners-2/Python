@@ -1,6 +1,6 @@
 import re
 
-email = 'email codezoners-2@rave.ac.uk for help'
+email = 'email codezoners-2@.rave.ac.uk for help'
 
 ## find email address
 match = re.search(r'[\w.\d-]*@[.\w]', email)
