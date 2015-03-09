@@ -8,7 +8,7 @@ if match: print 'example 1 -> I found: ', match.group()
 else: print 'example 1 -> not found'
 
 ## match all 'hurray' independent of excitement
-match = re.search(r'___________', myString)
+match = re.search(r'hurr\w*', myString)
 if match: print 'example 2 -> I found: ', match.group()
 else: print 'example 2 -> not found'
 
