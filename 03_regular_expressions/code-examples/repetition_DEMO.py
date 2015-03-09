@@ -1,6 +1,6 @@
 import re
 
-myString = 'I am in codezoner for life, hurrayyyyyyyyyyyyy!!!'
+myString = 'I am in code for life, hurrayyyyyyyyyyyyy!!!'
 
 ## Search for everything after codezoner
 match = re.search(r'codezoner \w*', myString)
