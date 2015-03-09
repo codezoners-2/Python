@@ -1,6 +1,6 @@
 import re
 
-myString = 'Iraq        am in code for life, hurrayyyyyyyyyyyyy!!!'
+myString = 'I        am in code for life, hurrayyyyyyyyyyyyy!!!'
 
 ## Search for everything after codezoner
 match = re.search(r'codezoner \w*', myString)
@@ -19,6 +19,6 @@ else: print 'example 3 -> not found'
 
 ## Find the word after the 'I' but only if it's the beginning of the sentence
 ## no matter how much space there is between it and the next word (but at least 1)
-match = re.search(r'^I\s+\w+', myString)
+match = re.search(r'^I\s*\w+', myString)
 if match: print 'example 4 -> I found: ', match.group()
 else: print 'example 4 -> not found'
