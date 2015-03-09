@@ -16,7 +16,7 @@ if match: print 'example 2 -> I found: ', match.group()
 else: print 'example 2 -> not found'
 
 ## use \d to locate the digit specifically
-match = re.search(r'codezone2', myString)
+match = re.search(r'^codezone2', myString)
 if match: print 'example 3 -> I found: ', match.group()
 else: print 'example 3 -> not found'
 
