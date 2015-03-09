@@ -5,7 +5,7 @@ myString = 'I am in codezone2'
 ## Search for pattern 'zone' in string 'I am a codezoner'.
 ## All of the pattern must match, but it may appear anywhere.
 ## On success, match.group() is matched text.
-match = re.search(r'______', myString)
+match = re.search(r'zone', myString)
 if match: print 'example 1 -> I found: ', match.group()
 else: print 'example 1 -> not found'
 
