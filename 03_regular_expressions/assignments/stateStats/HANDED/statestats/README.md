@@ -37,7 +37,7 @@ In this assignment you're asked to write code that opens two html files, reads t
     * copy-paste this: `if abbr is not None:` (if we actually found a state abbreviation we try getting the other values)
       * call the `extractStateName` passing `c` and store the returning value to `stateName`
       * call the `extractStateStats` passing `c`  and store the returning value to `stateStats`
-      * add an entry with key `abbr` in the `resultsDict` with value equal to a list made up of `stateName` and `statePop`
+      * add an entry with key `abbr` in the `resultsDict` with value equal to a list made up of `stateName` and `stateStats`
   * return `resultsDict`
 
 6. Create a `fileToList(filename)` function following these steps:
