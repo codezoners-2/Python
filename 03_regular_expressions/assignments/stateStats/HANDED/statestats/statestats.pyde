@@ -10,6 +10,7 @@ def setup():
     background(255)
     global landSizeDict
     global popDict
+    global s
     
     s = loadShape("usMap.svg")    
     s.disableStyle()
