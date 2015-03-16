@@ -10,7 +10,7 @@ In this assignment you're asked to make your previous code a bit more efficient 
   * once both tests fail, your ready to write code. Start by creating an empty dictionary called `resultsDict`
   * write a pattern with with brackets that will be able to match the groups of characters you need. You can use IDLE, or a separate file to test mini test programs. Start first by still using the `re.search()` command to make sure you are at least matching one pattern correctly.
   * after you match the first pattern, replace `re.search()` with `re.findall()` and store the return value to `matchesList`. What structure does `matchesList` store at this point? Think about it!
-  * if `matchesList is not None`:
+  * if `matchesList` contains at least one element (how do we test for that?:
     * loop over the matchesList and for all matches called `match`:
       * store the first element of the tuple, after making it capitalized in a variable called `abbr`
       * store the second element of the tuple in a variable called `stateName`
