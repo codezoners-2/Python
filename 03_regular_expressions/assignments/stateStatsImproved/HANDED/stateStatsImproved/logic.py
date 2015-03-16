@@ -4,7 +4,8 @@ import os
 # returns state name from string			
 def extractData(aString):
 	'''	
-	write test here
+	>>> s = "hello"
+	>>> extractData(s)
 	
 	'''
 	return 0
